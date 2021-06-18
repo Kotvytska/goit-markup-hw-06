@@ -492,10 +492,15 @@
             ><textarea name="comment" placeholder="Введите текст" class="modal-comment"></textarea>
           </label>
 
-          <label class="form-field checkbox"
-            ><input type="checkbox" name="policy" class="form-policy" />Соглашаюсь с рассылкой и
-            принимаю <a href="">Условия договора</a></label
-          >
+          <input
+            type="checkbox"
+            name="policy"
+            id="checkbox"
+            class="checkbox visually-hidden-modal"
+          />
+          <label for="checkbox" class="checkbox-policy">
+            Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link"> Условия договора</a>
+          </label>
 
           <button type="submit" class="button modal-button">Отправить</button>
         </form>
